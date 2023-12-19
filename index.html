@@ -17,22 +17,47 @@
         .content {
             text-align: center;
         }
-    </style>
+        /* Style for the button */
+        .nice-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid #85ac52;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #85ac52;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        /* Hover effect */
+        .nice-button:hover {
+            background-color: #fff;
+            color: #85ac52;
+        }
+        .spaced-paragraph {
+            margin-bottom: 200px; /* You can adjust this value as needed */
+        }
+    </style> 
 </head>
 <body>
 
     <div class="content">
         <h1>This page is under construction!</h1>
-        <p>Thx for stopping by. -njc</p>
+        <p class="spaced-paragraph">Thx for stopping by. -njc</p>
+        
+        <p><button onclick="goToBrain()" class="nice-button" >what is this</button>
+
+            <script>
+                function goToBrain() {
+                    window.location.href = 'brain/index.html';
+                }
+            </script>    
+        </p>
     </div>
-
-    <button onclick="goToBrain()">brain</button>
-
-    <script>
-        function goToBrain() {
-            window.location.href = 'brain/index.html';
-        }
-    </script>    
 
 </body>
 </html>    
